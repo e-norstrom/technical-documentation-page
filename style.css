@@ -1,0 +1,23 @@
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 3rem;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+.main-section {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+@media (min-width: 700px) {
+  nav {
+    position: fixed;
+    width: 130px;
+  }
+  main {
+    margin-left: 130px;
+  }
+}
