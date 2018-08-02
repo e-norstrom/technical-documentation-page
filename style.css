@@ -1,12 +1,7 @@
-
-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 3rem;
-  align-items: center;
-  border-bottom: 1px solid lightgrey;
+html {
+  scroll-behavior: smooth;
 }
+
 .main-section {
   margin-bottom: 3rem;
   border-bottom: 1px solid lightgrey;
@@ -17,7 +12,48 @@ nav {
     position: fixed;
     width: 130px;
   }
-  main {
-    margin-left: 130px;
+  .main-section {
+    margin-left: 140px;
   }
+}
+
+code {
+  background: lightgrey;
+  padding: 1em;
+  margin: 1em 0 1em 0;
+}
+
+nav {
+  height: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15em;
+  margin-left: 0 auto;
+}
+
+main {
+  margin-left: 0px;
+}
+ul {
+  padding-left: 0px;
+}
+li {
+  list-style-type: none;
+}
+nav > ul > li {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid black;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
+}
+nav > ul > li > a {
+  float: left;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 20px;
 }
